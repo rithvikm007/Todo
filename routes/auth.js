@@ -63,4 +63,11 @@ router.post('/login', async (req, res) => {
   res.json({ token, user: { id: user.id, username: user.username } });
 });
 
+// POST /auth/logout - Logout user
+router.post('/logout', (req, res) => {
+  // With JWT, logout is handled client-side by deleting the token
+  // This endpoint just confirms the logout action
+  res.json({ message: 'Logged out successfully' });
+});
+
 module.exports = router;

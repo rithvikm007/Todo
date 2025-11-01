@@ -1,6 +1,5 @@
 // Import required libraries
 const express = require('express');
-const path = require('path');
 const authRoutes = require('./routes/auth'); // Auth endpoints (register, login)
 const todosRoutes = require('./routes/todos'); // Todo CRUD endpoints
 
